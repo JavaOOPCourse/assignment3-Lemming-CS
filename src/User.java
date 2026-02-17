@@ -1,16 +1,16 @@
 public abstract class User {
-
     // TODO: declare fields
-    // name
-    // id
-
-
+    String name;
+    int id;
     // TODO: constructor
-
+    User(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
 
     // TODO: abstract method manageService(Service s)
-
+    abstract public void manageService(Service s);
 
     // TODO: abstract method useService(Service s)
-
+    abstract public void useService(Service s);
 }
